@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Vintage Fashion: Newsletter</title>
+        <link rel="stylesheet" href="fashion.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&display=swap" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Learn about fashion in the twentieth century">
+        <meta name="author" content="Aubrey Jacob">
+    </head>
+    
+    <body>
+        <header>
+            <h1>Vintage Fashion</h1>
+            <p>Trends of the Twentieth Century</p>
+        </header>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="190010.html">1900-10s</a></li>
+                <li><a href="2030.html">20s-30s</a></li>
+                <li><a href="4050.html">40s-50s</a></li>
+                <li><a href="6070.html">60s-70s</a></li>
+                <li><a href="8090.html">80s-90s</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li class="active"><a href="newsletter.html">Newsletter</a></li>
+            </ul>
+        </nav>
+        
+        <main>
+                <h1>Newsletter</h1>
+                <p>Sign up for our newsletter to see more about past and current fashion news. We also keep you up to date on fashion events and notify you of activities tailored to your interests.</p>
+            
+                <form method="get" class="form" action="thanks.html">
+                    <fieldset>
+                    <legend>Customer Information</legend>
+                        <label>First Name*<input type="text" name="fname" required></label>
+                        <label>Last Name*<input type="text" name="lname" required></label>
+                        <label>Phone Number*<input type="tel" name="phone" required></label>
+                        <label>Email*<input type="email" name="email" required></label>
+                    </fieldset>
+                    
+                    <fieldset>
+                    <legend>Newsletter Preferences</legend>
+                        <label>Delivery Method
+                        <select name=delivery>
+                            <option value="none">Please Select</option>
+                            <option value="email">Email</option>
+                            <option value="mail">Mail</option>
+                            <option value="socialmedia">Facebook</option>
+                        </select>
+                        </label>
+                        
+                       <p>Would you like to be notified of events?</p>
+                        <label><input type="radio" name="permission" value="yes">Yes</label>
+                        <label><input type="radio" name="permission" value="no">No</label>
+                        
+                        <label>Event Notification Method
+                        <select name=notification>
+                            <option value="none">Please Select</option>
+                            <option value="text">Text</option>
+                            <option value="email">Email</option>
+                            <option value="socialmedia">Facebook</option>
+                        </select>
+                        </label>
+                    </fieldset>
+                    
+                    <fieldset>
+                    <legend>Event Interests</legend>
+                        <label><input type="checkbox" name="photography" value="check">Photography</label>
+                        <label><input type="checkbox" name="shopping" value="check">Shopping</label>
+                        <label><input type="checkbox" name="sewing" value="check">Sewing</label>
+                        <label><input type="checkbox" name="acting" value="check">Acting</label>
+                    </fieldset>
+                    <label>Comments
+                    <textarea name="comments"></textarea>
+                    </label>
+                    <input type="submit" value="Sign Up">
+                </form>
+        </main>
+        
+        <footer>
+            <p>&copy; 2023 &bull; Aubrey Jacob &bull; DWDD 1600 Project 9/25 &bull; <a href="mailto:aubrey7aj@gmail.com">Email Us</a></p>
+        </footer>
+    
+    </body>
+</html>
