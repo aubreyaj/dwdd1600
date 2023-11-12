@@ -1,0 +1,230 @@
+*{box-sizing: border-box;}
+
+body {
+    font-family: 'Crimson Text', serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+}
+
+/* Header Style */
+
+header {
+    background-color: #7F292A;
+    padding: 1rem 2vw;
+    display: flex;
+    align-items: flex-end;
+}
+header div {
+    padding-left: 1vw;
+}
+header h1 {
+    margin: 0;
+    color: #FFFFFF;
+}
+header p {
+    margin: 0;
+    color: #FFFFFF;
+    letter-spacing: .5px;
+}
+
+/* Nav Style */
+@media only screen and (max-width: 800px) {
+    nav ul {
+        margin: 0;
+        padding: 0 2vw;
+        list-style-type: none;
+    }
+    nav a {
+        display: block;
+        padding: .75rem;
+        text-decoration: none;
+        font-weight: 700;
+        text-align: center;
+        background-color: #012534;
+        border-bottom: solid 1px white;
+        color: #FFFAFA;
+        background-image: linear-gradient(#012534, #011B26);
+    }
+    nav .active a {
+        background-color: #FFFAFA;
+        background-image: linear-gradient(#FFFAFA, #FFF7FA);
+        color: #012534;
+    }
+} /*end of media query*/
+@media only screen and (min-width: 801px) {
+    nav {
+    background-color: #012534;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0 2vw;
+    margin: 0;
+    display: flex;
+}
+nav a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #FFFAFA;
+    font-weight: 700;
+    display: block;
+    padding: .8rem 2rem;
+}
+nav li.active a {
+    background-color: #FFFAFA;
+    color: #012534;
+}
+nav a:hover {
+    color: #D17077;
+}
+} /*end of media query*/
+
+
+
+
+/* Main Style */
+
+main {
+    padding: 1rem 2vw;
+}
+main h1 {
+    color: #7F292A;
+}
+main h2 {
+    color: #024663;
+    margin-bottom: .2rem;
+}
+main h3 {
+    color: #024663;
+    margin-bottom: .2rem;
+}
+main p {
+    margin-bottom: .2rem;
+}
+main ol {
+    padding: .5rem 3vw;
+    background-color: #FFF5FA;
+}
+main dl {
+    background-color: #FFF5FA;
+    padding: .5rem;
+}
+main dl dt {
+    color: #7F292A;
+    font-weight: 700;
+}
+main dl dd {
+    font-size: .9rem;
+}
+main ul {
+    list-style-type: circle;
+    padding: .5rem 3vw;
+    background-color: #FFF5FA;
+}
+main address {
+    font-style: normal;
+    background-color: #FFF5FA;
+    padding: .5rem;
+    width: 14rem;
+    border: 1px solid #D17077;
+    border-radius: 5px;
+}
+main a {
+    color: #024663;
+}
+main a:hover {
+    color: #D17077;
+}
+figure.wrapped {
+    width: 30%;
+    margin: 0 0 0 2%;
+    float: right;
+}
+figure.wrapped img {
+    width: 100%;
+    height: auto;
+}
+figure.wrapped figcaption {
+    text-align: center;
+    font-size: .75rem;
+}
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+div.gallery figure {
+    margin: .5rem 2% 0 0;
+}
+div.gallery img:hover {
+    box-shadow: 6px 6px 10px black;
+}
+div.gallery figcaption {
+    text-align: center;
+    font-size: .8rem;
+}
+
+.vintagehero {
+    width: 100%;
+    margin: 0;
+}
+.vintagehero img {
+    width: 100%;
+    height: auto;
+}
+
+
+.form fieldset {
+    border: 1px solid #024663;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+}
+.form legend {
+    color: #024663;
+    font-size: .8rem;
+}
+.form label {
+    margin: .5rem;
+}
+.form p {
+    margin: .5rem;
+}
+.form label, .form select, .form [type=text], .form [type=tel], .form [type=email], .form textarea {
+    display: block;
+}
+.form [type=text], .form [type=tel], .form [type=email], .form select, .form textarea {
+    border: solid 1px #7494A6;
+    padding: .3rem;
+    width: 250px;
+    border-radius: .3rem;
+    font-family: 'Crimson Text', serif;
+    font-weight: 400;
+}
+.form textarea {
+    height: 6rem;
+}
+.form [type=submit] {
+    background-color: #024663;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: white;
+    margin: 1rem 0 0 1vw;
+}
+
+/* Footer Style*/
+
+footer {
+    background-color: #012534;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 1rem 0;
+    font-size: .9rem;
+}
+footer a {
+    color: #FFFFFF;
+}
+
+header, nav, main, footer {
+    max-width: 68rem;
+    margin: 0 auto;
+}
